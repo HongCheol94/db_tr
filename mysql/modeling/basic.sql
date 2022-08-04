@@ -1,1 +1,1 @@
-SELECT * FROM momstouch.car;
+SELECT * FROM momstouch.member;
