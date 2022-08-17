@@ -1,5 +1,7 @@
 use momstouch;
 
+
+
 -- 공통코드
 SELECT
  a.seq
@@ -10,6 +12,7 @@ FROM cc a
 INNER JOIN ccg b
 on a.ccg_seq = b.seq
 ;
+select * from cc limit 0, 100;
 
 -- car테이블
 select*
@@ -21,33 +24,49 @@ select*
 from member
 ;
 
+-- dealer 테이블
+select*
+from dealer
+;
+
+-- interest 테이블
+select*
+from interest
+;
+
+
+
 
 -- 로그인 --
 select 
-id
-,name
-,gender
-,dob
-,addressnumber
-,address
-,detailedAddress
-,number
-,email 
+	id
+	,name
+	,gender
+	,dob
+	,addressnumber
+	,address
+	,detailedAddress
+	,number
+	,email 
+    ,memberDefaultNy
 from member 
-where id="apple" and password="apple123" ;
+where id="apple" and password="apple123" 
+;
 
 -- 메인 --
 
-select 
-seq
-,carName
-,price
-,carAge
-,area
-,carGearBox
-,carMleage
+select
+	seq
+    , carName
+    , price
+    , madeby
 from car
-where carName='제네시스gv80'
+where 1=1
+	and madeby -- 제조사
+    and model -- 대표모델
+	and carName -- 검색어
+-- 세부모델
+-- 검색어
 ; 
 
 
@@ -77,6 +96,7 @@ select
     ,master
     ,member_seq
     ,dealer_seq
+    ,carDefaultNy
 from car
 where carName="쏘렌토"
 ;
@@ -105,6 +125,7 @@ seq
 ,master
 ,member_seq
 ,dealer_seq
+,carDefaultNy
 from car
 order by price desc
 ;
@@ -133,6 +154,7 @@ seq
 ,master
 ,member_seq
 ,dealer_seq
+,carDefaultNy
 from car
 order by price
 ;
@@ -161,6 +183,7 @@ seq
 ,master
 ,member_seq
 ,dealer_seq
+,carDefaultNy
 from car
 order by carAge desc
 ;
@@ -189,6 +212,7 @@ seq
 ,master
 ,member_seq
 ,dealer_seq
+,carDefaultNy
 from car
 order by carAge
 ;
@@ -217,6 +241,7 @@ seq
 ,master
 ,member_seq
 ,dealer_seq
+,carDefaultNy
 from car
 order by carMleage
 ;
@@ -245,6 +270,7 @@ seq
 ,master
 ,member_seq
 ,dealer_seq
+,carDefaultNy
 from car
 order by carMleage desc
 ;
@@ -280,11 +306,15 @@ select
     ,b.grade
     ,b.dealerNumber
     ,b.company
+    ,(select a.master from car where aa.master = a )
 from car a
-inner join dealer b
-on a.seq = b.seq
+left join dealer b on 1 = 1
+and a.seq = b.seq
+and a.master = 69
 ;
 
+
+-- 연습장
 
 select 
 seq

@@ -1,0 +1,13 @@
+seq,id,password,name,gender,dob,addressNumber,address,detailedAddress,number,email
+0,avocado,avocado132,김대표,4,1994-03-22,11678,의정부,108동 1121호,1045339715,masdcj@naver.com
+1,apple,apple123,김대표,5,1991-03-20,52027,의정부,627-2,1021426421,fdvxv@naver.com
+2,orange,orange234,이대표,5,1981-04-21,16548,수원,207호,1071274268,dfsdfs@nate.com
+3,grape,grape123,박대표,4,1971-07-11,6520,인천,209동 1521호,1031824721,sdfwe@yahoo.co.kr
+4,watermelon,water123,최대표,4,1961-02-12,48068,부산,304동 108호,1012737754,sfsdfs@naver.com
+5,strawberry,strawberry1234,엄대표,6,2001-04-01,25604,강릉,304호,1033451723,qqdfgq@ndaum.net
+6,mango,mangojoa,민대표,4,1991-04-06,34630,대전,2층,1054115841,sdfwedf@nate.com
+7,mandarin,mandarin152,최대표,5,1971-02-24,28178,청주,1101동203호,1012145631,cvbezxvc@naver.com
+8,banana,banana333,김대표,6,1990-07-30,31072,천안,207동505호,1078615218,qrcwrf12@nate.com
+9,tomato,tomato1234,지대표,5,1978-11-12,16677,수원,3층,1022155415,ycdnbmf@yahoo.co.kr
+10,melon,melon4212,나대표,4,1968-12-21,44701,울산,641-7,1098536257,fhsf2t111@daum.net
+11,kiwi ,kiwi12523,마대표,4,1994-05-02,63591,경주,7층,1087215255,bbjqd@naver.com
