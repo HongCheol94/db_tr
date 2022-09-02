@@ -56,6 +56,14 @@ and number like'%8615%'
 ;
 
 
+SELECT * FROM momstouch.cc;
+select 
+a.* 
+FROM ccg a
+inner join cc b on b.ccg_seq = a.seq
+;
+
+
 
 
 
