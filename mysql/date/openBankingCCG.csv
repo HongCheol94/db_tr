@@ -1,0 +1,16 @@
+ccgSeq,ccgCodeGroup,codeGroupK,ccgUseNy,ccgDelNy
+1,NULL,성별,1,0
+2,NULL,통신사,1,0
+3,NULL,이동전화코드,1,0
+4,NULL,이메일,1,0
+5,NULL,개인정보동의,1,0
+6,NULL,마케팅동의,1,0
+7,NULL,은행,1,0
+8,NULL,계좌종류,1,0
+9,NULL,입출금,1,0
+10,NULL,카드사,1,0
+11,NULL,카드종류,1,0
+12,NULL,카드타입(체크/신용),1,0
+13,NULL,분류,1,0
+14,NULL,카테고리,1,0
+15,NULL,결제수단,1,0
